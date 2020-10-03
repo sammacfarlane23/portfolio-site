@@ -8,13 +8,31 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 50px 0;
+  .hero-subheading {
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 2.4px;
+    color: #2bc016;
+    margin-bottom: 45px;
+  }
 }
 
-.hero-subheading {
-  text-transform: uppercase;
-  font-size: 24px;
-  font-weight: 600;
-  letter-spacing: 2.4px;
-  color: #999;
-  margin-bottom: 45px;
+@media only screen and (max-width: 576px) {
+  .hero {
+    text-align: center;
+    background: url('../img/intro-background-2-mobile.jpg');
+    background-size: cover;
+    background-position: center;
+
+    .hero-heading {
+      font-size: 40px;
+    }
+
+    .hero-subheading {
+      font-size: 14px;
+      color: lighten(#2bc016, 10%);
+    }
+  }
 }

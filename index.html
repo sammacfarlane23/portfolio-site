@@ -66,16 +66,30 @@
         <div class="row">
           <div class="col">
             <h2>My Portfolio</h2>
-            <p>Here's a selection of my most recent pieces of work.</p>
+            <p>Check out some of my most recent work.</p>
           </div>
         </div>
-        <div class="row">
+        <div class="row portfolio-cards">
           <div class="col-sm-4">
             <div class="portfolio-card card">
-              <img
-                class="card-img-top"
-                src="./img/meditation-journal-image.jpg"
-              />
+              <a
+                href="http://meditation-journal-app.herokuapp.com/"
+                target="_blank"
+                class="card-link"
+              >
+                <!--
+                <img
+                  class="card-img-top"
+                  src="./img/meditation-journal-image.jpg"
+                />
+                -->
+                <div
+                  class="portfolio-card-image"
+                  style="
+                    background-image: url('img/meditation-journal-image.jpg');
+                  "
+                ></div>
+              </a>
               <div class="card-body">
                 <h5 class="card-title">React Meditation Journal</h5>
                 <p class="card-text">Design and Development</p>
@@ -97,7 +111,17 @@
 
           <div class="col-sm-4">
             <div class="portfolio-card card">
-              <img class="card-img-top" src="./img/todo-image.jpg" />
+              <a
+                href="http://todo-or-not-todo-list.herokuapp.com/"
+                target="_blank"
+                class="card-link"
+              >
+                <div
+                  class="portfolio-card-image"
+                  style="background-image: url('img/todo-image.jpg')"
+                ></div>
+                <!-- <img class="card-img-top" src="./img/todo-image.jpg" /> -->
+              </a>
               <div class="card-body">
                 <h5 class="card-title">React To-do List and Habit Tracker</h5>
                 <p class="card-text">Design and Development</p>
@@ -118,13 +142,27 @@
           </div>
 
           <div class="col-sm-4">
-            <!-- Try making these into Bootstrap cards-->
             <div class="portfolio-card card">
-              <img class="card-img-top" src="./img/portfolio-placeholder.jpg" />
+              <a
+                href="https://dandrumming.co.uk/"
+                target="_blank"
+                class="card-link"
+              >
+                <div
+                  class="portfolio-card-image"
+                  style="background-image: url('img/dandrums-image.jpg')"
+                ></div>
+                <!-- <img class="card-img-top" src="./img/dandrums-image.jpg" /> -->
+              </a>
               <div class="card-body">
-                <h5 class="card-title">Meditation Journal App</h5>
+                <h5 class="card-title">Dan Smith Drums</h5>
                 <p class="card-text">Design and Development</p>
-                <a href="#" class="card-link">Live Demo</a>
+                <a
+                  href="https://dandrumming.co.uk/"
+                  target="_blank"
+                  class="card-link"
+                  >Live Demo</a
+                >
                 <a href="#" class="card-link">View Code</a>
               </div>
             </div>
@@ -132,7 +170,6 @@
         </div>
       </div>
     </section>
-
     <script type="text/javascript" src="js/scripts.js"></script>
   </body>
 </html>
